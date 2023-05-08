@@ -23,9 +23,9 @@ namespace WatchDogPC
     public partial class Form1 : Form
     {
         private static string URL_ROOT = "https://api2.nicehash.com";//"https://api-test.nicehash.com"; 
-        private static string ORG_ID = "";//"facfcb77-d472-4cfe-b5ac-90b66b02bed3";//"f0ec0aab-7870-416e-8380-df48f32aabbe";//"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee";
-        private static string API_KEY = "";//"7d94c66d-4180-4d71-8350-0f73c4b3191c";//"491f2faf-845b-4176-812a-efe79a809cc3";//"ffffffff-gggg-hhhh-iiii-jjjjjjjjjjjj";
-        private static string API_SECRET = "";//"2bac8f2a-a02b-4d22-ba39-c4e0df93f0dfc6d7c503-3fc1-4477-b2b4-f0af7fb75d9c";//"7326ccb9-e623-431d-b27a-2be862e348cc48d96bf7-b92a-4b40-80a6-b9dd694a3414";//"kkkkkkkk-llll-mmmm-nnnn-oooooooooooooooooooo-pppp-qqqq-rrrr-ssssssssssss";
+        private static string ORG_ID = "";
+        private static string API_KEY = "";
+        private static string API_SECRET = "";
         Thread portsThread, ReceiveThread;
         bool Connected = false, gettingPacket = false, WaitForReply, SettingsReceived, NoGPUsMonitoringFlag, FillComboGPUsFl;
         bool GetWatchRigWorkerFlag, SettingDevicesWorker, GettingWatchRigs, NiceInfoWorkFlag, RestartedGPUs, AllRigsInfo, GetWatchRigWorkerReady;
@@ -866,12 +866,6 @@ namespace WatchDogPC
 
         private void button16_Click(object sender, EventArgs e)
         {
-            //  var Bot = new Telegram.Bot.TelegramBotClient("1964015870:AAEqrZOkRD4nK0M3-vtNtpmF7YUeGQSmAZk");
-            //            Bot.GetUpdatesAsync();
-
-            //.SendTextMessageAsync(chat_id, "sdfsdf");
-
-            //            string urlString = $"https://api.telegram.org/bot{apilToken}/sendMessage?chat_id={destID}&text={text}";
 
             string urlString = "https://api.telegram.org/bot" + textBox12.Text + "/deleteWebhook";
 
