@@ -7,3 +7,5 @@
 ### WatchDogPC_Install - compiled binary for PC
 
 ## pdf files - instructions (in russian)
+Монитор (watchdog) состояния ПК, сервера, рига на ESP32: https://www.youtube.com/watch?v=ZxiaWQQhLQA
+Инструкция по подключению телеграмм-бота:  https://www.youtube.com/watch?v=7cu0_VGayHo
